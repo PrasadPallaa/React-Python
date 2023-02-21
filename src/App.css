@@ -1,3 +1,5 @@
+/* @import "~bootstrap/scss/bootstrap"; */
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: lightgray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.toggle-button {
+  display: block;
+  margin: 16px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
